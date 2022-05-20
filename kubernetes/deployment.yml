@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kuber-learn-deployment
+  labels: 
+    app: kuber-learn
+spec: 
+  replicas: 1
+  selector: 
+    matchLabels: 
+      app: kuber-learn
+  template:           	
+    metadata: 
+      labels:
+        app: kuber-learn
+    spec: 
+      containers:
+      - name: kuber-learn
+        image: andreydenissov/kuber_learn
+        ports: 
+        - containerPort: 8080
+

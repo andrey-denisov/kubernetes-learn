@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app: kuber-learn
+  name: kuber-learn-backend
+spec: 
+  selector:     
+    app: kuber-learn
+  type: LoadBalancer
+  ports: 
+    - protocol: TCP
+      port: 8991
+      targetPort: 8080
+
+                
