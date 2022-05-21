@@ -16,7 +16,6 @@
        <connection>scm:git:https://github.com/andrey-denisov/kubernetes-learn.git</connection>
        <developerConnection>scm:git:https://github.com/andrey-denisov/kubernetes-learn.git</developerConnection>
        <url>https://github.com/andrey-denisov/kubernetes-learn</url>
-      <tag>HEAD</tag>
     </scm>
 
     <distributionManagement>
