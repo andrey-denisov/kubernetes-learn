@@ -64,7 +64,6 @@
                    <groupId>org.springframework.boot</groupId>
                    <artifactId>spring-boot-maven-plugin</artifactId>
                </plugin>
-
             <plugin>
                <groupId>org.sonatype.plugins</groupId>
                <artifactId>nexus-staging-maven-plugin</artifactId>
@@ -81,7 +80,7 @@
                <configuration>
                   <serverId>nexus-releases</serverId>
                   <nexusUrl>http://localhost:8081/nexus/</nexusUrl>
-                  <skipStaging>true</skipStaging>
+                  <skipStaging>false</skipStaging>
                </configuration>
             </plugin>
          </plugins>
