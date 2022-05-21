@@ -60,10 +60,18 @@
         <id>release</id>
         <build>
            <plugins>
-               <plugin>
-                   <groupId>org.springframework.boot</groupId>
-                   <artifactId>spring-boot-maven-plugin</artifactId>
-               </plugin>
+             <plugin>
+               <groupId>org.springframework.boot</groupId>
+               <artifactId>spring-boot-maven-plugin</artifactId>
+             </plugin>
+             <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-deploy-plugin</artifactId>
+               <version>${maven-deploy-plugin.version}</version>
+               <configuration>
+               <skip>true</skip>
+               </configuration>
+            </plugin>
             <plugin>
                <groupId>org.sonatype.plugins</groupId>
                <artifactId>nexus-staging-maven-plugin</artifactId>
@@ -80,7 +88,7 @@
                <configuration>
                   <serverId>nexus-releases</serverId>
                   <nexusUrl>http://localhost:8081/nexus/</nexusUrl>
-                  <skipStaging>false</skipStaging>
+                  <skipStaging>true</skipStaging>
                </configuration>
             </plugin>
          </plugins>
