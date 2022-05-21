@@ -10,13 +10,13 @@
 
     <groupId>com.anden.learn</groupId>
     <artifactId>kuber-learn</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.3</version>
 
     <scm>
        <connection>scm:git:https://github.com/andrey-denisov/kubernetes-learn</connection>
        <developerConnection>scm:git:https://github.com/andrey-denisov/kubernetes-learn</developerConnection>
        <url>https://github.com/andrey-denisov/kubernetes-learn</url>
-      <tag>HEAD</tag>
+      <tag>kuber-learn-0.0.3</tag>
     </scm>
 
     <distributionManagement>
