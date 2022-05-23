@@ -9,7 +9,8 @@ pipeline {
 
     stage('Maven build') {
       steps {
-        sh 'mvn release:prepare release:perform -Prelease -X'
+        sh '''export PATH=$PATH:/var/jenkins_home/apache-maven-3.8.5/bin
+mvn release:prepare release:perform -Prelease -X'''
       }
     }
 
