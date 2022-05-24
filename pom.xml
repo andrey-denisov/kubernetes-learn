@@ -111,7 +111,7 @@
                </executions>
                <configuration>
                   <serverId>nexus-snapshots</serverId>
-                  <nexusUrl>http://192.168.1.66:8081/nexus/</nexusUrl>
+                  <nexusUrl>http://192.168.1.66:8081/</nexusUrl>
                   <skipStaging>false</skipStaging>
                </configuration>
             </plugin>
