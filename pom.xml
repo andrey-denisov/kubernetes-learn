@@ -73,7 +73,7 @@
                <artifactId>maven-deploy-plugin</artifactId>
                <version>${maven-deploy-plugin.version}</version>
                <configuration>
-	               <skip>releases</skip>
+	           <skip>releases</skip>
                </configuration>
             </plugin>
 	    <plugin>
@@ -85,25 +85,6 @@
                   <autoVersionSubmodules>true</autoVersionSubmodules>
                   <releaseProfiles>release</releaseProfiles>
                  </configuration>
-            </plugin>
-            <plugin>
-               <groupId>org.sonatype.plugins</groupId>
-               <artifactId>nexus-staging-maven-plugin</artifactId>
-               <version>1.5.1</version>
-               <executions>
-                  <execution>
-                     <id>default-deploy</id>
-                     <phase>deploy</phase>
-                     <goals>
-                        <goal>deploy</goal>
-                     </goals>
-                  </execution>
-               </executions>
-               <configuration>
-                  <serverId>nexus-releases</serverId>
-                  <nexusUrl>http://192.168.1.66:8081/nexus/</nexusUrl>
-                  <skipStaging>true</skipStaging>
-               </configuration>
             </plugin>
          </plugins>
        </build>
